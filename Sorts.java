@@ -1,7 +1,7 @@
 
 import java.util.ArrayList;
 
-public class SelectionSort
+public class Sorts
 {
 
   //~~~~~~~~~~~~~~~~~~~ HELPER METHODS ~~~~~~~~~~~~~~~~~~~
@@ -36,7 +36,7 @@ public class SelectionSort
   // VOID version of SelectionSort
   // Rearranges elements of input ArrayList
   // postcondition: data's elements sorted in ascending order
-  public static void selectionSortV( ArrayList<Comparable> data )
+  public static int selectionSort( ArrayList<Comparable> data )
   {
     //note: this version places greatest value at "rightmost" end
 
@@ -44,8 +44,9 @@ public class SelectionSort
     int maxPos = data.size() -1;
     int pass = data.size() -1 ;
     boolean change = false;
+    int counter = 0;
     for( Comparable x: data ) {
-      System.out.println( "\nbegin pass " + (data.size()-pass) );//diag // doing loops
+     // System.out.println( "\nbegin pass " + (data.size()-pass) );//diag // doing loops
 
 
       for( int i = 0; i <= pass ; i ++ ) {
@@ -60,32 +61,30 @@ public class SelectionSort
         data.set(pass , Posmax);
         }
 	change = false;
-	System.out.println( "maxPos: " + maxPos );//diag // finding max
-        System.out.println( data );//diag
+	//System.out.println( "maxPos: " + maxPos );//diag // finding max
+        //System.out.println( data );//diag
 	pass = pass - 1;
 	maxPos = pass;
-
+	counter = counter + 1;
       }
 
 
-      System.out.println( "after swap: " +  data );//diag
-    
+      //System.out.println( "after swap: " +  data );//diag
+      return counter;
   }//end selectionSort
   
    // VOID version of InsertionSort
   // Rearranges elements of input ArrayList
   // postcondition: data's elements sorted in ascending order
-  public static void insertionSortV( ArrayList<Comparable> data )
+  public static int insertionSort( ArrayList<Comparable> data )
   {
-
-
-
-
+int counter = 0;
+   
     for(int partition = 1; partition < data.size(); partition ++  ) {
       //partition marks first item in unsorted region
 	
-      System.out.println( "\npartition: " + partition + "\tdataset:"); //diag
-      System.out.println( data );
+      //System.out.println( "\npartition: " + partition + "\tdataset:"); //diag
+      //System.out.println( data );
        
       //traverse sorted region from right to left
       for( int i = partition; i > 0 ; i-- ) { // for styatement to contiunue swap for the number of partitions (size)
@@ -94,22 +93,26 @@ public class SelectionSort
         // by swapping adjacent items
         if ( data.get(i).compareTo(data.get(i-1)) < 0  ) {  //bigger or smaller question
 
-          System.out.println( "swap indices "+(i-1)+" & "+i+"..." ); //diag
+          //System.out.println( "swap indices "+(i-1)+" & "+i+"..." ); //diag
           Comparable sorting = data.get(i);
 	  data.set(i , data.get(i-1));    //swaps them here
 	  data.set(i-1, sorting);
         }
         else
           break;
+
       }
-    }
-  }//end insertionSortV
+     counter = partition;
+ }
+ return counter;
+}//end insertionSortV
   
    // VOID version of bubbleSort
   // Rearranges elements of input ArrayList
   // postcondition: data's elements sorted in ascending order
-  public static void bubbleSortV( ArrayList<Comparable> data )
+  public static int bubbleSort( ArrayList<Comparable> data )
   {
+int counter = 0;
     for (int passNum = 0; passNum < data.size() - 1; passNum++) {
       for (int index = data.size() - 1; index > passNum; index--) {
         Comparable previous = data.get(index - 1);
@@ -121,7 +124,9 @@ public class SelectionSort
 	  data.set(index - 1, current);
 	}
       }
+    counter = passNum;
     }
+return counter;
   }
-  
-  }
+
+}
