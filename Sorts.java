@@ -59,13 +59,13 @@ public class Sorts
 	Comparable Posmax = data.get(maxPos) ;
 	data.set(maxPos , data.get(pass));
         data.set(pass , Posmax);
+	counter ++;
         }
 	change = false;
 	//System.out.println( "maxPos: " + maxPos );//diag // finding max
         //System.out.println( data );//diag
 	pass = pass - 1;
 	maxPos = pass;
-	counter = counter + 1;
       }
 
 
@@ -97,12 +97,12 @@ int counter = 0;
           Comparable sorting = data.get(i);
 	  data.set(i , data.get(i-1));    //swaps them here
 	  data.set(i-1, sorting);
+	  counter ++;
         }
         else
           break;
 
       }
-     counter = partition;
  }
  return counter;
 }//end insertionSortV
@@ -122,11 +122,11 @@ int counter = 0;
         if (comparison > 0) {
           data.set(index, previous);
 	  data.set(index - 1, current);
+	counter ++;
 	}
       }
-    counter = passNum;
     }
 return counter;
-  }
+  } // end counter
 
-}
+}// end all
