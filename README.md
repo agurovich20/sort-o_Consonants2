@@ -3,13 +3,22 @@
 # SotW: Survival Tactics - Joey Bada$$
 ## Roster: Ari Gurovich, Oscar Breen, Marcus Wu
 Questions:
-* Best case scenario?
-  * Bubblesort
-      * Already Sorted
-  * SelectionSort 
-      * Already Sorted
-  * InsertionSort
-      * Already Sorted
+## BubbleSort
+  * Best Case Scenario
+     * Sorted in ascending order (1 , 2 , 3 , 4 ,5);
+     * O(0)
+  * Worst Case Scenario
+     * jj 
+## SelectionSort
+  * Best Case Scenario
+     * Sorted in ascending order (1 , 2 , 3 , 4 ,5);
+     * O(0)
+  * Worst Case Scenario
+     * Everythging in incorrect position
+## InsertionSort
+  * Best Case Scenario
+     * Sorted in ascending order (1 , 2 , 3 , 4 ,5);
+     * O(0)
 
 * Worst case scenario?
   * Bubblesort
