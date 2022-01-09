@@ -6,7 +6,8 @@ Time Spent: 5 hrs
 
 DISCO:
 -- Swaps are more costly than comparisons
--- 
+-- Selection Sort the best
+-- Insertion Sort will still require the same amount of comparisons every single list no matter the order
 
 QCC:
 
