@@ -20,7 +20,7 @@
      * put O value here
   * Worst Case Scenario
      * Everything in incorrect position [4 , 5 , 1 , 2 , 3]
-       * Reasoning: while the comaprions numebr of o the all cases of the same size for Seleciton Soprt are the same, our          code only switches them if it is not already in the wrong place giving this array many more switches than the            best case
+       * Reasoning: while the comaprisons numbe for all of the cases of the same size for Selection Sort are the same,            our code only switches them if it is not already in the wrong place giving this array many more switches than            the best case
      * put O value here
 ## InsertionSort
   * Best Case Scenario
