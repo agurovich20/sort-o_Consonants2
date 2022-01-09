@@ -1,6 +1,6 @@
 # sort-o_Consonants2
-## TNPG : Consonants2
-# SotW: Survival Tactics - Joey Bada$$
+# TNPG : Consonants2
+## SotW: Survival Tactics - Joey Bada$$
 ### Roster: Ari Gurovich, Oscar Breen, Marcus Wu
 
 *assumes all methods is to sort to ascending order* 
