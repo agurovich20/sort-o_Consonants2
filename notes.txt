@@ -1,4 +1,4 @@
-Consonants2: Oscar Breen, Ari Agurovich, Marcus Wu
+Consonants2: Oscar Breen, Ari Gurovich, Marcus Wu
 APCS pd 8
 L04: Never Fear, Big O is Here! 
 2022-01-11
