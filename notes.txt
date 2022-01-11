@@ -1,7 +1,7 @@
 Consonants2: Oscar Breen, Ari Agurovich, Marcus Wu
 APCS pd 8
 L04: Never Fear, Big O is Here! 
-2022-01-10
+2022-01-11
 Time Spent: 5 hrs
 
 DISCO:
@@ -10,4 +10,18 @@ DISCO:
 -- Insertion Sort will still require the same amount of comparisons every single list no matter the order
 
 QCC:
+                                   
 
+BS-QA
+q0: If a pass requires no swaps, what do you know?
+a: The Set is sorted.
+q1: After pass p, what do you know?
+a: p elements are sorted
+q2: How many passes are necessary to completely sort?
+a: size of set - 1
+
+
+SS-QA
+
+
+IS-QA
