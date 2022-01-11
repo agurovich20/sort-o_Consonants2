@@ -22,6 +22,24 @@ a: size of set - 1
 
 
 SS-QA
+q0: How many passes to sort n elements?
+a: n -1
+q1: What do you know after pass p?
+a: p elements were sorted
+q2: How do you know if sorted?
+a: if n - 1 passes were made
+q3: What does a pass boil down to?
+a: finding the most extreme element and moving it to the furthest left or right  - / + i
 
 
 IS-QA
+q0: How many passes to sort n elements?
+a: n - 1 passes
+q1: What do you know after pass p?
+a: that p+1 elements are sorted
+q2: How will you know when sorted?
+a: after the number of passes equals the size +1
+q3: What constitues a pass?
+a: increasing the sorted list size by one
+q4: What must you track?
+a: how far along the array it has sorted (partitions)
